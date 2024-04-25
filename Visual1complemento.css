@@ -1,5 +1,4 @@
 /* Estilo geral */
-
 body {
     margin: 20px;
     background-color: black;
@@ -11,9 +10,6 @@ body {
 }
 
 header {
-    background-color: gray;
-    color: beige;
-    padding: 10px;
     text-align: center;
 }
 
@@ -24,23 +20,32 @@ main {
 }
 
 /* Estilos especificos */
-h1{
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: red;
+h1 {
+    color: rgba(255, 0, 0, 0.788);
     font-size: xx-large;
+    transition: 0.5s;
 }
 
-h2{
-
+h1:hover{
     color: red;
+    transform: scale(1.05);
+}
+
+h2 {
+    color: rgba(255, 0, 0, 0.788);
+    transition: 0.5s;
+}
+
+h2:hover{
+    color: red;
+    transform: scale(1.05);
 }
 
 .theater {
-    background-color: gray;
     padding: 20px;
     margin: 20px;
-    width: 30%;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
 }
 
 .theater h2 {
@@ -57,29 +62,37 @@ ul li {
     margin-bottom: 10px;
 }
 
-img{
-    width: 250px;
+img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
 }
 
-a:hover{
+img:hover{
+    transform: scale(1.50);
+}
+
+a{
+    color: rgba(255, 0, 0, 0.788);
+    transition: 0.5s;
+}
+a:hover {
     color: red;
+    transform: scale(1.05);
 }
 
-title{
-    font-size: 30px;
-    font-family: Verdana;
+table, th, td, tr{
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 2px 5px;
 }
 
-td{
-    color: red;
-    border: 2px solid black;
-    background-color: #666;
+table{
+    width: 100%;
 }
 
-th{
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: red;
-    border: 2px solid black;
-    background-color: #666;
+@media (max-width: 768px) {
+    .theater {
+        width: 100%;
+    }
 }

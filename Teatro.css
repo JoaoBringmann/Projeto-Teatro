@@ -1,7 +1,7 @@
 /* Estilo geral */
 body {
     margin: 20px;
-    background-color: black;
+    background-color: white;
     font-family: sans-serif;
     font-size: 17px;
     color: #666;
@@ -104,6 +104,10 @@ body {
   .time-container {
     display: flex;
     align-items: flex-start;
+  }
+
+  .horario-container{
+    text-align: center;
   }
   
   @media (max-width: 768px) {
